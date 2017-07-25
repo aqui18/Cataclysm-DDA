@@ -940,6 +940,7 @@ void options_manager::init()
     // Note: Somewhere in github PR was better link to msdn.microsoft.com with language names.
     // http://en.wikipedia.org/wiki/List_of_language_names
     optionNames["en"] = R"(English)";
+    optionNames["en_ja"] = R"(Japanese English)";
     optionNames["fr"] =  R"(Français)";
     optionNames["de"] = R"(Deutsch)";
     optionNames["it_IT"] = R"(Italiano)";
@@ -953,7 +954,7 @@ void options_manager::init()
     optionNames["zh_CN"] = R"(中文(天朝))";
     optionNames["zh_TW"] = R"(中文(台灣))";
     add("USE_LANG", "interface", _("Language"), _("Switch Language."),
-        ",en,fr,de,it_IT,es_AR,es_ES,ja,ko,pl,pt_BR,ru,zh_CN,zh_TW",
+        ",en,en_ja,fr,de,it_IT,es_AR,es_ES,ja,ko,pl,pt_BR,ru,zh_CN,zh_TW",
         ""
         );
 
